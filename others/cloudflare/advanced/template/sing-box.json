@@ -1,0 +1,78 @@
+{
+  "dns": {
+    "rules": [
+      {
+        "domain": [
+          "need"
+        ],
+        "server": "dns-direct"
+      },
+      {
+        "disable_cache": true,
+        "domain_suffix": [
+          ".arpa.",
+          ".arpa"
+        ],
+        "server": "dns-block"
+      }
+    ],
+    "servers": [],
+    "strategy": "ipv4_only"
+  },
+  "inbounds": [
+    {
+      "domain_strategy": "",
+      "listen": "127.0.0.1",
+      "listen_port": 10808,
+      "tag": "socks",
+      "type": "socks"
+    },
+    {
+      "domain_strategy": "",
+      "listen": "127.0.0.1",
+      "listen_port": 10809,
+      "tag": "http",
+      "type": "http"
+    }
+  ],
+  "log": {
+    "level": "panic"
+  },
+  "outbounds": [
+    {
+      "alter_id": 0,
+      "packet_encoding": "",
+      "security": "auto",
+      "server": "need",
+      "server_port": 443,
+      "tls": {
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "enabled": true,
+        "insecure": false,
+        "server_name": "need",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "android"
+        }
+      },
+      "transport": {
+        "headers": {
+          "Host": "need"
+        },
+        "path": "/speedtest",
+        "type": "ws"
+      },
+      "uuid": "4EA68717-BD05-486C-A177-247400D35C18",
+      "type": "vmess",
+      "tag": "proxy",
+      "domain_strategy": ""
+    }
+  ],
+  "route": {
+    "auto_detect_interface": true,
+    "rules": []
+  }
+}
