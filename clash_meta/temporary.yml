@@ -1,0 +1,24 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - {name: RescueNet-1, server: fake.id.workers.dev, port: 443, type: vless, uuid: d3cc3c36-d127-46b5-ae45-1b9645dc96c6, cipher: auto, tls: true, skip-cert-verify: true, servername: iraniazad2.net-azad68528.fun, network: ws, ws-opts: {path: /tel/sansorchi_bezan_gheychi_bot, headers: {Host: iraniazad2.net-azad68528.fun}}, udp: true}
+  - {name: RescueNet-2, server: fake.id.workers.dev, port: 2053, type: vless, uuid: d3cc3c36-d127-46b5-ae45-1b9645dc96c6, cipher: auto, tls: true, skip-cert-verify: true, servername: iraniazad2.net-azad68528.fun, network: grpc, grpc-opts: {grpc-service-name: tel_sansorchi_bezan_gheychi_bot}, udp: true}
+  - {name: RescueNet-3, server: fake.id.workers.dev, port: 2095, type: vmess, uuid: d3cc3c36-d127-46b5-ae45-1b9645dc96c6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: iraniazad2.net-azad68528.fun, network: ws, ws-opts: {path: /tel/sansorchi_bezan_gheychi_bot, headers: {Host: iraniazad2.net-azad68528.fun}}, udp: true}
+  - {name: RescueNet-4, server: fake.id.workers.dev, port: 443, type: vless, uuid: d3cc3c36-d127-46b5-ae45-1b9645dc96c6, cipher: auto, tls: true, skip-cert-verify: true, servername: iraniazad4.net-azad68528.fun, network: ws, ws-opts: {path: /tel/sansorchi_bezan_gheychi_bot, headers: {Host: iraniazad4.net-azad68528.fun}}, udp: true}
+  - {name: RescueNet-5, server: fake.id.workers.dev, port: 2053, type: vless, uuid: d3cc3c36-d127-46b5-ae45-1b9645dc96c6, cipher: auto, tls: true, skip-cert-verify: true, servername: iraniazad4.net-azad68528.fun, network: grpc, grpc-opts: {grpc-service-name: tel_sansorchi_bezan_gheychi_bot}, udp: true}
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - RescueNet-1
+      - RescueNet-2
+      - RescueNet-3
+      - RescueNet-4
+      - RescueNet-5
+      - DIRECT
+rules:
+ - MATCH,PROXY

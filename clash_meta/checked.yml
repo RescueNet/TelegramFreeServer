@@ -1,0 +1,494 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: Rule
+log-level: info
+external-controller: :9090
+proxies:
+  - {name: RescueNet-1, server: 127.0.0.1, port: 1080, type: trojan, password: 2234, skip-cert-verify: true, sni: bsi.ir, udp: true}
+  - {name: RescueNet-2, server: 141.148.176.3, port: 80, type: trojan, password: c8e877d3-2909-416d-aa5a-6d1722a374bd, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-3, server: 15.223.3.198, port: 22222, type: trojan, password: telegram-id-directvpn, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-4, server: 3.127.218.172, port: 22222, type: trojan, password: telegram-id-directvpn, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-5, server: 52.47.108.144, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-6, server: 27.0.175.159, port: 1935, type: trojan, password: fWCdFcWBZ8, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-7, server: 138.197.5.103, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-8, server: 54.168.195.122, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-9, server: 103.20.223.4, port: 50180, type: trojan, password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-10, server: 144.24.89.25, port: 58678, type: trojan, password: z3NtLA8ocb, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-11, server: 168.138.214.219, port: 443, type: vmess, uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /, headers: {Host: oci.donpau.com}}, udp: true}
+  - {name: RescueNet-12, server: 103.231.254.81, port: 443, type: vmess, uuid: afa2b3af-248e-43a1-ad6b-076cca22e302, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /, headers: {Host: hk1.looooooongnet.lol}}, udp: true}
+  - {name: RescueNet-13, server: 185.143.220.25, port: 443, type: vmess, uuid: f28e354e-c2d1-4983-9b07-5acaf1b3b3e5, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /6e9EtZ2dL, headers: {Host: telewebion.com}}, udp: true}
+  - {name: RescueNet-14, server: 13.214.178.56, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-15, server: 36.230.26.114, port: 23330, type: trojan, password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-16, server: 34.243.206.189, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-17, server: 18.142.118.15, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-18, server: 146.19.230.241, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-19, server: 35.90.78.21, port: 22222, type: trojan, password: telegram-id-directvpn, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-20, server: 35.177.209.213, port: 22222, type: trojan, password: telegram-id-privatevpns, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-21, server: 60.249.3.228, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /s/f1f3227.fm.apple.com:111548, headers: {Host: f1f3227.f3.glados-config.net}}, udp: true}
+  - {name: RescueNet-22, server: 38.48.123.89, port: 443, type: trojan, password: opentunnel.net-imohammad93, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-23, server: free-v2ray-panel.devefun.ink, port: 1935, type: trojan, password: fWCdFcWBZ8, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-24, server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-25, server: 54.193.96.133, port: 8898, type: trojan, password: cdf45086-a5d9-4bb2-a31f-ad57324d7deb, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-26, server: 154.64.229.73, port: 443, type: trojan, password: d5c395be-b387-412d-a51b-7780a0bfa575, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-27, server: 216.52.59.50, port: 20458, type: trojan, password: m8krTirthj, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-28, server: 194.156.99.39, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-29, server: 103.20.223.4, port: 50180, type: trojan, password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-30, server: 138.124.183.226, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-31, server: 16.162.37.198, port: 35485, type: trojan, password: f25b1a86-af94-4c95-9ce4-9760859130a4, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-32, server: 23.224.110.184, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /path/080712342310, headers: {Host: telewebion.com}}, udp: true}
+  - {name: RescueNet-33, server: 23.224.110.182, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /path/080712342310, headers: {Host: telewebion.com}}, udp: true}
+  - {name: RescueNet-34, server: 199.188.110.120, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /path/1687165779141, headers: {Host: www.54092415.xyz}}, udp: true}
+  - {name: RescueNet-35, server: 23.224.110.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /path/080712342310, headers: {Host: 23.224.110.183}}, udp: true}
+  - {name: RescueNet-36, server: cn-hk-51.fnhffffe4.cc, port: 50014, type: trojan, password: 73658d71-be45-4495-bc3e-e69d36ce73b5, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-37, server: cn-hk-package.hyperlinkvpn.xyz, port: 50180, type: trojan, password: ba5305d8-bf3e-4eee-8ebf-1c7b9a6dbed2, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-38, server: 23.108.100.101, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /footers, headers: {Host: www.40587333.xyz}}, udp: true}
+  - {name: RescueNet-39, server: 103.234.53.23, port: 50014, type: trojan, password: 73658d71-be45-4495-bc3e-e69d36ce73b5, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-40, server: 107.167.20.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /path/243535322906, headers: {Host: telewebion.com}}, udp: true}
+  - {name: RescueNet-41, server: in7.ulifeai.com, port: 443, type: vmess, uuid: 8e9c46ff-1635-4262-ab76-b07b5ea41acc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: in7.ulifeai.com, network: ws, ws-opts: {path: /swoole, headers: {Host: in7.ulifeai.com}}, udp: true}
+  - {name: RescueNet-42, server: 99.79.190.59, port: 22222, type: trojan, password: telegram-id-directvpn, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-43, server: 140.99.155.99, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: telewebion.com, network: ws, ws-opts: {path: /path/1688462036206, headers: {Host: www.68178927.xyz}}, udp: true}
+  - {name: RescueNet-44, server: 36.228.195.156, port: 23330, type: trojan, password: c32c56fb-64d9-33c4-b42a-af81b7a33fe7, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-45, server: 104.18.29.109, port: 443, type: vmess, uuid: be74ca03-6a7c-4c88-edc2-c6434ead0cfa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: cdnca1.digisport.shop, network: ws, ws-opts: {path: /16575, headers: {Host: cdnca1.digisport.shop}}, udp: true}
+  - {name: RescueNet-46, server: 144.24.89.25, port: 58678, type: trojan, password: z3NtLA8ocb, skip-cert-verify: true, sni: telewebion.com, udp: true}
+  - {name: RescueNet-47, server: 83.229.82.135, port: 60606, type: trojan, password: D9269A88-D1E9-F72F-803B-3D2E5D7C1A32, skip-cert-verify: true, sni: getandroid.com, udp: true}
+  - {name: RescueNet-48, server: 104.31.16.65, port: 2053, type: vmess, uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: iraniancp.click, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: b5.iraniancp.click}}, udp: true}
+  - {name: RescueNet-49, server: 104.31.16.213, port: 2053, type: vmess, uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: iraniancp.click, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: b5.iraniancp.click}}, udp: true}
+  - {name: RescueNet-50, server: 104.31.16.58, port: 443, type: vmess, uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sandp.blanku.me, network: ws, ws-opts: {path: /wss51068, headers: {Host: sand.blanku.me}}, udp: true}
+  - {name: RescueNet-51, server: 104.31.16.35, port: 443, type: vmess, uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sandp.blanku.me, network: ws, ws-opts: {path: /wss51068, headers: {Host: sand.blanku.me}}, udp: true}
+  - {name: RescueNet-52, server: 104.31.16.58, port: 443, type: vmess, uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: franc.digires.shop, network: ws, ws-opts: {path: /11201, headers: {Host: franc.digires.shop}}, udp: true}
+  - {name: RescueNet-53, server: 203.28.8.207, port: 443, type: vmess, uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: franc.digires.shop, network: ws, ws-opts: {path: /11201, headers: {Host: franc.digires.shop}}, udp: true}
+  - {name: RescueNet-54, server: 203.28.8.64, port: 443, type: vmess, uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sandp.blanku.me, network: ws, ws-opts: {path: /wss51068, headers: {Host: sand.blanku.me}}, udp: true}
+  - {name: RescueNet-55, server: 104.31.16.65, port: 443, type: vmess, uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: franc.digires.shop, network: ws, ws-opts: {path: /11201, headers: {Host: franc.digires.shop}}, udp: true}
+  - {name: RescueNet-56, server: 104.31.16.65, port: 443, type: vmess, uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sandp.blanku.me, network: ws, ws-opts: {path: /wss51068, headers: {Host: sand.blanku.me}}, udp: true}
+  - {name: RescueNet-57, server: 104.31.16.196, port: 443, type: vmess, uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: franc.digires.shop, network: ws, ws-opts: {path: /11201, headers: {Host: franc.digires.shop}}, udp: true}
+  - {name: RescueNet-58, server: 203.23.104.190, port: 443, type: vmess, uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sandp.blanku.me, network: ws, ws-opts: {path: /wss51068, headers: {Host: sand.blanku.me}}, udp: true}
+  - {name: RescueNet-59, server: 159.246.55.180, port: 443, type: vmess, uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: franc.digires.shop, network: ws, ws-opts: {path: /11201, headers: {Host: franc.digires.shop}}, udp: true}
+  - {name: RescueNet-60, server: 104.31.16.213, port: 443, type: vmess, uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: franc.digires.shop, network: ws, ws-opts: {path: /11201, headers: {Host: franc.digires.shop}}, udp: true}
+  - {name: RescueNet-61, server: 104.31.16.196, port: 443, type: vmess, uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sandp.blanku.me, network: ws, ws-opts: {path: /wss51068, headers: {Host: sand.blanku.me}}, udp: true}
+  - {name: RescueNet-62, server: 203.23.104.190, port: 443, type: vmess, uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: franc.digires.shop, network: ws, ws-opts: {path: /11201, headers: {Host: franc.digires.shop}}, udp: true}
+  - {name: RescueNet-63, server: 203.28.8.207, port: 443, type: vmess, uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sandp.blanku.me, network: ws, ws-opts: {path: /wss51068, headers: {Host: sand.blanku.me}}, udp: true}
+  - {name: RescueNet-64, server: 104.27.97.42, port: 443, type: vmess, uuid: c13277ce-cda6-4d01-cedc-1e3605a0eb72, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: amstd.digires.shop, network: ws, ws-opts: {path: /12796, headers: {Host: amstd.digires.shop}}, udp: true}
+  - {name: RescueNet-65, server: 104.31.16.213, port: 443, type: vmess, uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sandp.blanku.me, network: ws, ws-opts: {path: /wss51068, headers: {Host: sand.blanku.me}}, udp: true}
+  - {name: RescueNet-66, server: 159.246.55.180, port: 443, type: vmess, uuid: b3a21def-5fcc-47a8-a6a0-a34e29d5288a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sandp.blanku.me, network: ws, ws-opts: {path: /wss51068, headers: {Host: sand.blanku.me}}, udp: true}
+  - {name: RescueNet-67, server: 104.31.16.58, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: steep-bread-ef2e.labegob718911.workers.dev, network: ws, ws-opts: {path: /vus3.0bad.com/chat, headers: {Host: steep-bread-ef2e.labegob718911.workers.dev}}, udp: true}
+  - {name: RescueNet-68, server: 159.246.55.180, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: steep-bread-ef2e.labegob718911.workers.dev, network: ws, ws-opts: {path: /vus3.0bad.com/chat, headers: {Host: steep-bread-ef2e.labegob718911.workers.dev}}, udp: true}
+  - {name: RescueNet-69, server: 104.31.16.35, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /vus3.0bad.com:443/chat, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-70, server: 104.31.16.58, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /vus3.0bad.com:443/chat, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-71, server: 203.28.8.64, port: 2053, type: vmess, uuid: 72f76c36-3e3c-45b3-a61f-d8f017345958, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: iraniancp.click, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: b5.iraniancp.click}}, udp: true}
+  - {name: RescueNet-72, server: 203.28.8.207, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: steep-bread-ef2e.labegob718911.workers.dev, network: ws, ws-opts: {path: /vus3.0bad.com/chat, headers: {Host: steep-bread-ef2e.labegob718911.workers.dev}}, udp: true}
+  - {name: RescueNet-73, server: 127.0.0.1, port: 1080, type: trojan, password: 2234, skip-cert-verify: true, sni: bsi.ir, udp: true}
+  - {name: RescueNet-74, server: 192.71.211.161, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-75, server: 5.188.6.8, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-76, server: 192.71.249.71, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-77, server: 103.75.118.27, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-78, server: 37.235.49.152, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-79, server: 37.235.49.162, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-80, server: 37.235.55.21, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-81, server: 37.235.55.42, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-82, server: 185.180.12.81, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-83, server: 192.36.27.116, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-84, server: 216.52.183.243, port: 80, type: ss, cipher: aes-128-gcm, password: 83XvX4Vo%*3a, udp: true}
+  - {name: RescueNet-86, server: 31.171.153.181, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-87, server: 185.47.255.219, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-88, server: 170.80.111.6, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-89, server: 171.22.254.17, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-90, server: 134.209.147.198, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-91, server: 13.125.74.132, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: RescueNet-92, server: 62.12.116.66, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-93, server: 190.103.176.29, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-94, server: 190.103.179.23, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-95, server: 190.120.229.28, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-96, server: 190.120.231.45, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-97, server: 192.121.87.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-98, server: 77.72.5.150, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-100, server: 1.1.1.1, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /header, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-101, server: 104.31.16.65, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /vin1.0bad.com:443/chat, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-102, server: 104.27.38.85, port: 443, type: vmess, uuid: a869c557-5c7d-426f-9039-0279c16352bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routews.99freaking.workers.dev, network: ws, ws-opts: {path: /meetzoom.disnet.gq:443/vmessws, headers: {Host: routews.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-103, server: 104.31.16.196, port: 443, type: vmess, uuid: 6eb387d0-a404-4f56-a8c0-5cb3e0c0d451, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routews.99freaking.workers.dev, network: ws, ws-opts: {path: /ger.hamyonline.shop:443/17528, headers: {Host: routews.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-104, server: 104.31.16.65, port: 443, type: vmess, uuid: bf67437e-6c90-45ca-abc2-c7240a5ce2aa, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routews.99freaking.workers.dev, network: ws, ws-opts: {path: /foxpol.fovi.tk:2053/eisasqa, headers: {Host: routews.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-105, server: 104.27.38.85, port: 443, type: vmess, uuid: 379a7c2e-cdec-4e64-8d2d-cd2c893508bd, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, servername: routews.99freaking.workers.dev, network: ws, ws-opts: {path: /tulip.route76.net:443/cache, headers: {Host: routews.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-106, server: 104.19.180.169, port: 443, type: vmess, uuid: 1441af41-5cee-497e-a47c-c26af169f9ff, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routews.99freaking.workers.dev, network: ws, ws-opts: {path: /x.leonard.eu.org:443/, headers: {Host: routews.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-107, server: 104.19.180.169, port: 443, type: vmess, uuid: a869c557-5c7d-426f-9039-0279c16352bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routews.99freaking.workers.dev, network: ws, ws-opts: {path: /linkedin.disnet.gq:443/vmessws, headers: {Host: routews.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-108, server: 104.31.16.65, port: 443, type: vmess, uuid: 71b2655e-07d9-4dad-a770-a2b08275142b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /hk.biutefor.icu:443/biutefor.icu, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-109, server: 104.31.16.65, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /w3ish3it.downloadha.workers.dev:443/www.19458162.xyz:443/path/120306182525, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-110, server: 104.31.16.65, port: 443, type: vmess, uuid: 18e5f40f-bda6-4c15-9334-e87cda6047af, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /ming2.kiwireich.com:443/ray, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-111, server: 104.31.16.65, port: 443, type: vmess, uuid: DCE76061-EE65-49DB-997C-A6A880DADE3A, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /little-sound-292f.walidfree22.workers.dev:443/speedtest/Amsterdam.kotick.site, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-112, server: 104.31.16.65, port: 443, type: vmess, uuid: c77d02e9-5738-46ac-9512-7b67746cad85, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /bp.nidaye.eu.org:443/ndy58850, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-113, server: 104.31.16.65, port: 443, type: vmess, uuid: F0259D88-2331-4109-A540-B240DFA251F2, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: routewsuser.99freaking.workers.dev, network: ws, ws-opts: {path: /little-sound-292f.walidfree22.workers.dev:443/speedtest/Amsterdam.kotick.site, headers: {Host: routewsuser.99freaking.workers.dev}}, udp: true}
+  - {name: RescueNet-114, server: 192.9.130.66, port: 443, type: trojan, password: 7c7e0edb-c45a-4c07-b66a-69b191179349, skip-cert-verify: true, sni: us.disnet.gq, udp: true}
+  - {name: RescueNet-115, server: 212.102.47.198, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: RescueNet-116, server: us.disnet.gq, port: 443, type: trojan, password: 7c7e0edb-c45a-4c07-b66a-69b191179349, skip-cert-verify: true, sni: "", udp: true}
+  - {name: RescueNet-117, server: 54.187.208.118, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: RescueNet-118, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: RescueNet-119, server: 163.123.192.57, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, skip-cert-verify: true, sni: 20-24-33-134.nhost.00cdn.com, udp: true}
+  - {name: RescueNet-120, server: 104.243.25.95, port: 253, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: RescueNet-121, server: cloudconebbb.gorgorchicken.one, port: 8443, type: vmess, uuid: aa0c4744-9568-4bee-a08b-73668a9b2a42, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: cloudconebbb.gorgorchicken.one, network: ws, ws-opts: {path: /, headers: {Host: cloudconebbb.gorgorchicken.one}}, udp: true}
+  - {name: RescueNet-122, server: 172.96.192.100, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: RescueNet-123, server: 205.185.125.200, port: 11451, type: vmess, uuid: 165bdbb6-3fd0-4d1a-e6fb-0e5cd2a0154f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-124, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vus4.0bad.com, network: ws, ws-opts: {path: /, headers: {Host: vus4.0bad.com}}, udp: true}
+  - {name: RescueNet-125, server: cloudconeaaa.gorgorchicken.one, port: 8443, type: vmess, uuid: 1cec1ebc-b489-4769-f2d9-e079b5832a60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: cloudconeaaa.gorgorchicken.one, network: ws, ws-opts: {path: /, headers: {Host: cloudconeaaa.gorgorchicken.one}}, udp: true}
+  - {name: RescueNet-126, server: 184.170.241.194, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: RescueNet-127, server: 144.168.58.170, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr05, udp: true}
+  - {name: RescueNet-128, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: RescueNet-129, server: 97.64.31.80, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr03, udp: true}
+  - {name: RescueNet-130, server: vus3.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vus3.0bad.com, network: ws, ws-opts: {path: /, headers: {Host: vus3.0bad.com}}, udp: true}
+  - {name: RescueNet-131, server: 107.167.20.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-132, server: 37.218.241.130, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: j4wkIrreHEdC, udp: true}
+  - {name: RescueNet-133, server: vus5.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vus5.0bad.com, network: ws, ws-opts: {path: /, headers: {Host: vus5.0bad.com}}, udp: true}
+  - {name: RescueNet-134, server: 23.247.137.71, port: 3331, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-135, server: 194.36.55.106, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: delicate-butterfly-93f8.zuhyp4107.workers.dev, network: ws, ws-opts: {path: /, headers: {Host: delicate-butterfly-93f8.zuhyp4107.workers.dev}}, udp: true}
+  - {name: RescueNet-136, server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-137, server: 167.160.90.253, port: 25511, type: ss, cipher: aes-256-gcm, password: dongtaiwang.com, udp: true}
+  - {name: RescueNet-138, server: us.blazeppn.info, port: 443, type: trojan, password: xxoo, skip-cert-verify: true, sni: "", udp: true}
+  - {name: RescueNet-139, server: 192.3.150.233, port: 8443, type: vmess, uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-140, server: 67.21.72.41, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-141, server: 45.131.248.140, port: 50068, type: vmess, uuid: 557e532e-de4a-4b3e-9fb2-5d355ccb5da9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 45.131.248.140, network: ws, ws-opts: {path: /, headers: {Host: 45.131.248.140}}, udp: true}
+  - {name: RescueNet-142, server: zendesk1.grab.com, port: 443, type: vmess, uuid: 952d7273-726a-4f3d-9676-f9c711b1ec52, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: v2ray1.udpgw.com, network: ws, ws-opts: {path: /, headers: {Host: v2ray1.udpgw.com}}, udp: true}
+  - {name: RescueNet-143, server: 23.26.239.163, port: 18420, type: vmess, uuid: 65578c09-f23e-49cc-abee-4ad2a1850f9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-144, server: mci.saintink.eu.org, port: 443, type: vmess, uuid: c226d9fa-b5a7-4f6e-9532-50137c89311d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 4.saintink.eu.org, network: ws, ws-opts: {path: /, headers: {Host: 4.saintink.eu.org}}, udp: true}
+  - {name: RescueNet-145, server: 38.121.43.71, port: 3389, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: RescueNet-146, server: 23.224.110.183, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-147, server: 23.224.110.184, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-148, server: 38.121.43.71, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
+  - {name: RescueNet-149, server: 38.121.43.71, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: RescueNet-150, server: 45.12.144.91, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-151, server: 38.121.43.71, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
+  - {name: RescueNet-152, server: 140.99.155.99, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-153, server: kbawsjp1.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, skip-cert-verify: true, sni: 4-193-105-141.nhost.00cdn.com, udp: true}
+  - {name: RescueNet-154, server: tk-006.xiaoxiaobujidao.xyz, port: 20001, type: trojan, password: 567fc98e-f73c-3f00-b011-8e9cf6b873e8, skip-cert-verify: true, sni: "", udp: true}
+  - {name: RescueNet-155, server: oci.donpau.com, port: 443, type: vmess, uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: oci.donpau.com, network: ws, ws-opts: {path: /, headers: {Host: oci.donpau.com}}, udp: true}
+  - {name: RescueNet-156, server: 172.105.218.17, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D, udp: true}
+  - {name: RescueNet-157, server: 38.121.43.71, port: 8008, type: ss, cipher: aes-256-gcm, password: XKFKl2rULjIp74, udp: true}
+  - {name: RescueNet-158, server: 38.121.43.71, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: RescueNet-159, server: 179.49.5.114, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-160, server: kbawsjp2.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, skip-cert-verify: true, sni: 4-193-105-141.nhost.00cdn.com, udp: true}
+  - {name: RescueNet-161, server: 74.121.191.98, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-162, server: 38.107.226.159, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
+  - {name: RescueNet-163, server: 18.183.217.240, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: RescueNet-164, server: 38.107.226.159, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7, udp: true}
+  - {name: RescueNet-165, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN, udp: true}
+  - {name: RescueNet-166, server: 168.138.214.219, port: 443, type: vmess, uuid: 3C02DC15-56AE-7889-8936-9A2EA8FF8666, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-167, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: RescueNet-168, server: ccarm.wasanbi.tk, port: 58678, type: trojan, password: z3NtLA8ocb, skip-cert-verify: true, sni: "", udp: true}
+  - {name: RescueNet-169, server: 77.72.5.113, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-170, server: 221.150.109.69, port: 2003, type: ss, cipher: aes-256-cfb, password: qwerREWQ@@, udp: true}
+  - {name: RescueNet-171, server: a26.2e5bf271.win, port: 80, type: vmess, uuid: 1180f539-dd5e-47fc-94ca-11069438c8a3, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: a26.2e5bf271.win, network: ws, ws-opts: {path: /, headers: {Host: a26.2e5bf271.win}}, udp: true}
+  - {name: RescueNet-172, server: 212.102.53.78, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-173, server: 212.102.53.193, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-174, server: 212.102.53.195, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-175, server: 212.102.53.198, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-176, server: 212.102.53.194, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-177, server: ak1793.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-178, server: 212.102.53.197, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-179, server: 212.102.53.80, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-180, server: 212.102.53.81, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-181, server: 212.102.53.196, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-182, server: 212.102.53.79, port: 443, type: ss, cipher: aes-128-gcm, password: shadowsocks, udp: true}
+  - {name: RescueNet-183, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vau1.0bad.com, network: ws, ws-opts: {path: /, headers: {Host: vau1.0bad.com}}, udp: true}
+  - {name: RescueNet-184, server: 195.154.185.174, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-185, server: 109.201.152.181, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: RescueNet-186, server: masting.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: XlUFgoOqDlVqlZFD3Js0YA, udp: true}
+  - {name: RescueNet-187, server: 89.163.140.153, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-188, server: 37.218.240.243, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: XlUFgoOqDlVqlZFD3Js0YA, udp: true}
+  - {name: RescueNet-189, server: beacomf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: T1pb7XxxrolvPSb0u2xSOA, udp: true}
+  - {name: RescueNet-190, server: ams.mjnl.store, port: 23027, type: vmess, uuid: eb2a3f0e-80ef-48ab-8d86-833b08963ba3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: ams.mjnl.store, network: ws, ws-opts: {path: /, headers: {Host: ams.mjnl.store}}, udp: true}
+  - {name: RescueNet-191, server: passconf.xyz, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
+  - {name: RescueNet-192, server: vuk1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vuk1.0bad.com, network: ws, ws-opts: {path: /, headers: {Host: vuk1.0bad.com}}, udp: true}
+  - {name: RescueNet-193, server: s1.2b2.top, port: 50504, type: vmess, uuid: b479ffd3-5809-40a1-b789-12652cc8084d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: s1.2b2.top, network: ws, ws-opts: {path: /, headers: {Host: s1.2b2.top}}, udp: true}
+  - {name: RescueNet-194, server: 20.24.99.46, port: 50504, type: vmess, uuid: b479ffd3-5809-40a1-b789-12652cc8084d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-195, server: 37.218.240.66, port: 8080, type: ss, cipher: chacha20-ietf-poly1305, password: qGjmI8WQlF0tfhDbkLqGdN, udp: true}
+  - {name: RescueNet-196, server: 20.24.99.46, port: 50502, type: vmess, uuid: b479ffd3-5809-40a1-b789-12652cc8084d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-197, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vuk2.0bad.com, network: ws, ws-opts: {path: /, headers: {Host: vuk2.0bad.com}}, udp: true}
+  - {name: RescueNet-198, server: dearma.76898102.xyz, port: 2052, type: vmess, uuid: 1262dace-d355-3868-915f-b7418c2e7390, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: dearma.76898102.xyz, network: ws, ws-opts: {path: /, headers: {Host: dearma.76898102.xyz}}, udp: true}
+  - {name: RescueNet-199, server: 139.162.236.79, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D, udp: true}
+  - {name: RescueNet-200, server: 51.15.75.140, port: 443, type: vmess, uuid: 4df65f62-99d9-42d1-a4b9-a35b37b26873, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-201, server: 23.227.38.111, port: 443, type: vmess, uuid: 012c4549-17d2-475e-b1c1-a3b19cf36622, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 2.freek1.xyz, network: ws, ws-opts: {path: /, headers: {Host: 2.freek1.xyz}}, udp: true}
+  - {name: RescueNet-202, server: 130.162.53.215, port: 24576, type: ss, cipher: aes-256-gcm, password: VdaItKYmFf, udp: true}
+  - {name: RescueNet-203, server: 38.121.43.71, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
+  - {name: RescueNet-204, server: w1.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, type: trojan, password: 4b526505-3de3-4cb4-8f99-70b65adea09f, skip-cert-verify: true, sni: 13-231-155-134.NHOST.00CDN.COM, udp: true}
+  - {name: RescueNet-205, server: 156.146.62.160, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks, udp: true}
+  - {name: RescueNet-206, server: 170.178.179.189, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-207, server: 130.162.47.123, port: 6854, type: vmess, uuid: b5f7e932-f730-4ad2-b425-40977b9db332, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-208, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vde1.0bad.com, network: ws, ws-opts: {path: /, headers: {Host: vde1.0bad.com}}, udp: true}
+  - {name: RescueNet-209, server: 139.162.128.90, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D, udp: true}
+  - {name: RescueNet-210, server: 5.188.181.201, port: 9054, type: ss, cipher: aes-256-cfb, password: VcFuyXvND2yQWSFY, udp: true}
+  - {name: RescueNet-211, server: 185.180.12.81, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-212, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vde2.0bad.com, network: ws, ws-opts: {path: /, headers: {Host: vde2.0bad.com}}, udp: true}
+  - {name: RescueNet-213, server: 152.69.197.74, port: 12345, type: vmess, uuid: b8a6bf58-485a-4046-b386-b3661bf65eff, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-214, server: 209.250.244.74, port: 23027, type: vmess, uuid: eb2a3f0e-80ef-48ab-8d86-833b08963ba3, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-215, server: franc.digires.shop, port: 443, type: vmess, uuid: 1af4ba3d-e60f-4f83-b38b-23fc181f676d, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: franc.digires.shop, network: ws, ws-opts: {path: /, headers: {Host: franc.digires.shop}}, udp: true}
+  - {name: RescueNet-216, server: 5.188.226.187, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-217, server: 185.90.61.153, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-218, server: 35.199.85.179, port: 64581, type: vmess, uuid: a3b14fc0-2181-4c48-f8e6-ff5eb0525465, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 35.199.85.179, network: ws, ws-opts: {path: /, headers: {Host: 35.199.85.179}}, udp: true}
+  - {name: RescueNet-219, server: 121.127.46.147, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-220, server: linkedin.disnet.gq, port: 443, type: vmess, uuid: a869c557-5c7d-426f-9039-0279c16352bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: linkedin.disnet.gq, network: ws, ws-opts: {path: /, headers: {Host: linkedin.disnet.gq}}, udp: true}
+  - {name: RescueNet-221, server: cn-hk-51.fnhffffe4.cc, port: 50014, type: trojan, password: 73658d71-be45-4495-bc3e-e69d36ce73b5, skip-cert-verify: true, sni: "", udp: true}
+  - {name: RescueNet-222, server: 168.138.160.119, port: 30080, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-223, server: sgp.sharktec.co, port: 30080, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: sgp.sharktec.co, network: ws, ws-opts: {path: /, headers: {Host: sgp.sharktec.co}}, udp: true}
+  - {name: RescueNet-224, server: kbawssg1.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, skip-cert-verify: true, sni: 4-193-105-141.nhost.00cdn.com, udp: true}
+  - {name: RescueNet-225, server: 89.44.197.156, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-226, server: kbawssg2.aiopen.cfd, port: 443, type: trojan, password: a8f284ff-7d36-493a-a0a6-87ee7f003c5c, skip-cert-verify: true, sni: 4-193-105-141.nhost.00cdn.com, udp: true}
+  - {name: RescueNet-227, server: 13.213.46.196, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: RescueNet-228, server: 18.139.2.255, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: RescueNet-229, server: sgp-e.pelejd.top, port: 10013, type: vmess, uuid: aba18fa5-e326-4886-be0b-cb79e4b9da9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: sgp-e.pelejd.top, network: ws, ws-opts: {path: /, headers: {Host: sgp-e.pelejd.top}}, udp: true}
+  - {name: RescueNet-230, server: 52.77.227.59, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: RescueNet-231, server: 52.221.214.113, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: RescueNet-232, server: 18.136.196.12, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05, udp: true}
+  - {name: RescueNet-233, server: 168.138.182.121, port: 443, type: vmess, uuid: a869c557-5c7d-426f-9039-0279c16352bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-234, server: meetzoom.disnet.gq, port: 443, type: vmess, uuid: a869c557-5c7d-426f-9039-0279c16352bc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: meetzoom.disnet.gq, network: ws, ws-opts: {path: /, headers: {Host: meetzoom.disnet.gq}}, udp: true}
+  - {name: RescueNet-235, server: tw1.kidcc.xyz, port: 8443, type: vmess, uuid: a8974bec-526d-4b4e-a46f-f0d6626ca576, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: tw1.kidcc.xyz, network: ws, ws-opts: {path: /, headers: {Host: tw1.kidcc.xyz}}, udp: true}
+  - {name: RescueNet-236, server: 159.223.83.87, port: 80, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-237, server: 139.162.16.104, port: 10013, type: vmess, uuid: aba18fa5-e326-4886-be0b-cb79e4b9da9b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: "", network: ws, ws-opts: {path: /, headers: {Host: ""}}, udp: true}
+  - {name: RescueNet-238, server: pqawszf.aiopen.cfd, port: 443, type: trojan, password: 7ad2a5e0-906b-4b3e-97bb-b5f3992cb19d, skip-cert-verify: true, sni: us1.pqjc.site, udp: true}
+  - {name: RescueNet-239, server: 51.15.25.187, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, udp: true}
+  - {name: RescueNet-240, server: 158.69.122.231, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: xkud5hn, udp: true}
+  - {name: RescueNet-241, server: trky.digires.shop, port: 443, type: vmess, uuid: bc329892-2028-49ba-b594-aa14c0ee8f92, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: trky.digires.shop, network: ws, ws-opts: {path: /, headers: {Host: trky.digires.shop}}, udp: true}
+  - {name: RescueNet-242, server: 38.121.43.71, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM, udp: true}
+proxy-groups:
+  - name: PROXY
+    type: select
+    proxies:
+      - RescueNet-1
+      - RescueNet-2
+      - RescueNet-3
+      - RescueNet-4
+      - RescueNet-5
+      - RescueNet-6
+      - RescueNet-7
+      - RescueNet-8
+      - RescueNet-9
+      - RescueNet-10
+      - RescueNet-11
+      - RescueNet-12
+      - RescueNet-13
+      - RescueNet-14
+      - RescueNet-15
+      - RescueNet-16
+      - RescueNet-17
+      - RescueNet-18
+      - RescueNet-19
+      - RescueNet-20
+      - RescueNet-21
+      - RescueNet-22
+      - RescueNet-23
+      - RescueNet-24
+      - RescueNet-25
+      - RescueNet-26
+      - RescueNet-27
+      - RescueNet-28
+      - RescueNet-29
+      - RescueNet-30
+      - RescueNet-31
+      - RescueNet-32
+      - RescueNet-33
+      - RescueNet-34
+      - RescueNet-35
+      - RescueNet-36
+      - RescueNet-37
+      - RescueNet-38
+      - RescueNet-39
+      - RescueNet-40
+      - RescueNet-41
+      - RescueNet-42
+      - RescueNet-43
+      - RescueNet-44
+      - RescueNet-45
+      - RescueNet-46
+      - RescueNet-47
+      - RescueNet-48
+      - RescueNet-49
+      - RescueNet-50
+      - RescueNet-51
+      - RescueNet-52
+      - RescueNet-53
+      - RescueNet-54
+      - RescueNet-55
+      - RescueNet-56
+      - RescueNet-57
+      - RescueNet-58
+      - RescueNet-59
+      - RescueNet-60
+      - RescueNet-61
+      - RescueNet-62
+      - RescueNet-63
+      - RescueNet-64
+      - RescueNet-65
+      - RescueNet-66
+      - RescueNet-67
+      - RescueNet-68
+      - RescueNet-69
+      - RescueNet-70
+      - RescueNet-71
+      - RescueNet-72
+      - RescueNet-73
+      - RescueNet-74
+      - RescueNet-75
+      - RescueNet-76
+      - RescueNet-77
+      - RescueNet-78
+      - RescueNet-79
+      - RescueNet-80
+      - RescueNet-81
+      - RescueNet-82
+      - RescueNet-83
+      - RescueNet-84
+      - RescueNet-86
+      - RescueNet-87
+      - RescueNet-88
+      - RescueNet-89
+      - RescueNet-90
+      - RescueNet-91
+      - RescueNet-92
+      - RescueNet-93
+      - RescueNet-94
+      - RescueNet-95
+      - RescueNet-96
+      - RescueNet-97
+      - RescueNet-98
+      - RescueNet-100
+      - RescueNet-101
+      - RescueNet-102
+      - RescueNet-103
+      - RescueNet-104
+      - RescueNet-105
+      - RescueNet-106
+      - RescueNet-107
+      - RescueNet-108
+      - RescueNet-109
+      - RescueNet-110
+      - RescueNet-111
+      - RescueNet-112
+      - RescueNet-113
+      - RescueNet-114
+      - RescueNet-115
+      - RescueNet-116
+      - RescueNet-117
+      - RescueNet-118
+      - RescueNet-119
+      - RescueNet-120
+      - RescueNet-121
+      - RescueNet-122
+      - RescueNet-123
+      - RescueNet-124
+      - RescueNet-125
+      - RescueNet-126
+      - RescueNet-127
+      - RescueNet-128
+      - RescueNet-129
+      - RescueNet-130
+      - RescueNet-131
+      - RescueNet-132
+      - RescueNet-133
+      - RescueNet-134
+      - RescueNet-135
+      - RescueNet-136
+      - RescueNet-137
+      - RescueNet-138
+      - RescueNet-139
+      - RescueNet-140
+      - RescueNet-141
+      - RescueNet-142
+      - RescueNet-143
+      - RescueNet-144
+      - RescueNet-145
+      - RescueNet-146
+      - RescueNet-147
+      - RescueNet-148
+      - RescueNet-149
+      - RescueNet-150
+      - RescueNet-151
+      - RescueNet-152
+      - RescueNet-153
+      - RescueNet-154
+      - RescueNet-155
+      - RescueNet-156
+      - RescueNet-157
+      - RescueNet-158
+      - RescueNet-159
+      - RescueNet-160
+      - RescueNet-161
+      - RescueNet-162
+      - RescueNet-163
+      - RescueNet-164
+      - RescueNet-165
+      - RescueNet-166
+      - RescueNet-167
+      - RescueNet-168
+      - RescueNet-169
+      - RescueNet-170
+      - RescueNet-171
+      - RescueNet-172
+      - RescueNet-173
+      - RescueNet-174
+      - RescueNet-175
+      - RescueNet-176
+      - RescueNet-177
+      - RescueNet-178
+      - RescueNet-179
+      - RescueNet-180
+      - RescueNet-181
+      - RescueNet-182
+      - RescueNet-183
+      - RescueNet-184
+      - RescueNet-185
+      - RescueNet-186
+      - RescueNet-187
+      - RescueNet-188
+      - RescueNet-189
+      - RescueNet-190
+      - RescueNet-191
+      - RescueNet-192
+      - RescueNet-193
+      - RescueNet-194
+      - RescueNet-195
+      - RescueNet-196
+      - RescueNet-197
+      - RescueNet-198
+      - RescueNet-199
+      - RescueNet-200
+      - RescueNet-201
+      - RescueNet-202
+      - RescueNet-203
+      - RescueNet-204
+      - RescueNet-205
+      - RescueNet-206
+      - RescueNet-207
+      - RescueNet-208
+      - RescueNet-209
+      - RescueNet-210
+      - RescueNet-211
+      - RescueNet-212
+      - RescueNet-213
+      - RescueNet-214
+      - RescueNet-215
+      - RescueNet-216
+      - RescueNet-217
+      - RescueNet-218
+      - RescueNet-219
+      - RescueNet-220
+      - RescueNet-221
+      - RescueNet-222
+      - RescueNet-223
+      - RescueNet-224
+      - RescueNet-225
+      - RescueNet-226
+      - RescueNet-227
+      - RescueNet-228
+      - RescueNet-229
+      - RescueNet-230
+      - RescueNet-231
+      - RescueNet-232
+      - RescueNet-233
+      - RescueNet-234
+      - RescueNet-235
+      - RescueNet-236
+      - RescueNet-237
+      - RescueNet-238
+      - RescueNet-239
+      - RescueNet-240
+      - RescueNet-241
+      - RescueNet-242
+      - DIRECT
+rules:
+ - MATCH,PROXY
